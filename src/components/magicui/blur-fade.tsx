@@ -14,7 +14,8 @@ interface BlurFadeProps {
   delay?: number;
   yOffset?: number;
   inView?: boolean;
-  inViewMargin?: string;
+  inViewMargin?: `${number}px ${number}px ${number}px ${number}px`; // ✅ literal format (optional)
+
   blur?: string;
 }
 const BlurFade = ({
@@ -25,7 +26,7 @@ const BlurFade = ({
   delay = 0,
   yOffset = 6,
   inView = false,
-  inViewMargin = "-50px",
+  inViewMargin = "0px 0px -50px 0px",
   blur = "6px",
 }: BlurFadeProps) => {
   const ref = useRef(null);

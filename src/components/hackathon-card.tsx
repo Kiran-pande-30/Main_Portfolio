@@ -4,11 +4,7 @@ import Link from "next/link";
 
 interface Props {
   title: string;
-<<<<<<< HEAD
-  description: string;
-=======
   description: string[];
->>>>>>> a23149b (Updated Portfolio)
   dates: string;
   location: string;
   image?: string;
@@ -43,11 +39,6 @@ export function HackathonCard({
         {location && (
           <p className="text-sm text-muted-foreground">{location}</p>
         )}
-<<<<<<< HEAD
-        {description && (
-          <span className="prose dark:prose-invert text-sm text-muted-foreground">
-            {description}
-=======
         {Array.isArray(description) && description.length > 0 && (
           <span className="text-sm text-black dark:text-white">
             <ul className="list-disc list-inside space-y-1">
@@ -57,7 +48,6 @@ export function HackathonCard({
                 </li>
               ))}
             </ul>
->>>>>>> a23149b (Updated Portfolio)
           </span>
         )}
       </div>

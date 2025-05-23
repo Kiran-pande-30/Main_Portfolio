@@ -71,9 +71,11 @@ export function TravelCard({
         </CardHeader>
 
         <CardContent className="p-0 mt-2">
-          <Markdown className="prose max-w-full text-sm text-muted-foreground dark:prose-invert">
-            {description}
-          </Markdown>
+          <div className="prose max-w-full text-sm text-muted-foreground dark:prose-invert">
+            <Markdown>
+              {description}
+            </Markdown>
+          </div>
         </CardContent>
 
         {tags && tags.length > 0 && (

@@ -17,11 +17,7 @@ interface ResumeCardProps {
   href?: string;
   badges?: readonly string[];
   period: string;
-<<<<<<< HEAD
-  description?: string;
-=======
   description?: string[];
->>>>>>> a23149b (Updated Portfolio)
 }
 export const ResumeCard = ({
   logoUrl,
@@ -33,11 +29,7 @@ export const ResumeCard = ({
   period,
   description,
 }: ResumeCardProps) => {
-<<<<<<< HEAD
-  const [isExpanded, setIsExpanded] = React.useState(false);
-=======
   const [isExpanded, setIsExpanded] = React.useState(true);
->>>>>>> a23149b (Updated Portfolio)
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     if (description) {
@@ -108,9 +100,6 @@ export const ResumeCard = ({
               }}
               className="mt-2 text-xs sm:text-sm"
             >
-<<<<<<< HEAD
-              {description}
-=======
               <ul className="list-disc list-inside space-y-1">
                 {description.map((desc, index) => (
                   <li key={index} className="text-black dark:text-white">
@@ -118,7 +107,6 @@ export const ResumeCard = ({
                   </li>
                 ))}
               </ul>
->>>>>>> a23149b (Updated Portfolio)
             </motion.div>
           )}
         </div>

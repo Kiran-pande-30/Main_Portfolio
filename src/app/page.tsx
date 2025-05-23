@@ -3,16 +3,14 @@ import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
-<<<<<<< HEAD
-=======
 import { TravelCard } from "@/components/travel-page";
 import { CodingProfileCard } from "@/components/profile-card";
->>>>>>> a23149b (Updated Portfolio)
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import "./globals.css"; 
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -34,7 +32,6 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
-<<<<<<< HEAD
               <BlurFade delay={BLUR_FADE_DELAY * 2}>
                 <span className="text-sm text-muted-foreground">
                   Email : <a 
@@ -45,8 +42,6 @@ export default function Page() {
                   </a>
                 </span>
               </BlurFade>
-=======
->>>>>>> a23149b (Updated Portfolio)
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-28 border">
@@ -62,25 +57,17 @@ export default function Page() {
           <h2 className="text-xl font-bold">About</h2>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
-<<<<<<< HEAD
-          <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
-=======
-          <Markdown className="prose max-w-full text-pretty font-sans text-sm text-black dark:text-white">
->>>>>>> a23149b (Updated Portfolio)
-            {DATA.summary}
-          </Markdown>
+          <div className="prose max-w-full text-pretty font-sans text-sm text-black dark:text-white">
+            <Markdown>
+              {DATA.summary}
+            </Markdown>
+          </div>
         </BlurFade>
       </section>
       <section id="work">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
-<<<<<<< HEAD
-            <h2 className="text-xl font-bold">
-              Open Source Cohort Participation
-            </h2>
-=======
             <h2 className="text-xl font-bold">Technical Experience</h2>
->>>>>>> a23149b (Updated Portfolio)
           </BlurFade>
           {DATA.work.map((work, id) => (
             <BlurFade
@@ -96,12 +83,9 @@ export default function Page() {
                 href={work.href}
                 badges={work.badges}
                 period={`${work.start} - ${work.end ?? "Present"}`}
-<<<<<<< HEAD
-                description={work.description}
-=======
                 description={
                   Array.isArray(work.description)
-                    ? work.description
+                    ? [...work.description]
                     : [work.description]
                 }
               />
@@ -125,8 +109,7 @@ export default function Page() {
                 logoUrl={profile.logoUrl}
                 altText={profile.title}
                 title={profile.title}
-                stats={profile.stats}
->>>>>>> a23149b (Updated Portfolio)
+                stats={[...profile.stats]}
               />
             </BlurFade>
           ))}
@@ -160,17 +143,6 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
             <h2 className="text-xl font-bold">Skills</h2>
           </BlurFade>
-<<<<<<< HEAD
-          <div className="flex flex-wrap gap-1">
-            {DATA.skills.map((skill, id) => (
-              <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
-                <Badge key={skill}>{skill}</Badge>
-              </BlurFade>
-            ))}
-          </div>
-        </div>
-      </section>
-=======
 
           {Object.entries(DATA.skills).map(
             ([category, skills], categoryIndex) => (
@@ -192,7 +164,6 @@ export default function Page() {
         </div>
       </section>
 
->>>>>>> a23149b (Updated Portfolio)
       <section id="projects">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
@@ -252,15 +223,11 @@ export default function Page() {
                 >
                   <HackathonCard
                     title={project.title}
-<<<<<<< HEAD
-                    description={project.description}
-=======
                     description={
                       Array.isArray(project.description)
-                        ? project.description
+                        ? [...project.description]
                         : [project.description]
                     }
->>>>>>> a23149b (Updated Portfolio)
                     location={project.location}
                     dates={project.dates}
                     image={project.image}
@@ -295,7 +262,7 @@ export default function Page() {
                 >
                   <HackathonCard
                     title={project.title}
-                    description={project.description}
+                    description={[...project.description]}
                     location={project.location}
                     dates={project.dates}
                     image={project.image}
@@ -307,8 +274,6 @@ export default function Page() {
           </BlurFade>
         </div>
       </section>
-<<<<<<< HEAD
-=======
       {/* <section id="travel">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
@@ -344,7 +309,6 @@ export default function Page() {
           </div>
         </div>
       </section> */}
->>>>>>> a23149b (Updated Portfolio)
     </main>
   );
 }
