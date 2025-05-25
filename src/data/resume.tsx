@@ -44,18 +44,12 @@ export const DATA = {
 
         navbar: true,
       },
-      Youtube: {
-        name: "Youtube",
-        url: "https://dub.sh/dillion-youtube",
-        icon: Icons.youtube,
-        navbar: false,
-      },
       email: {
         name: "Send Email",
-        url: "#",
+        url: "kpande026@gmail.com",
         icon: Icons.email,
 
-        navbar: false,
+        navbar: true,
       },
     },
   },
@@ -87,10 +81,10 @@ export const DATA = {
       start: "Sept 24",
       end: "Dec 24",
       description:[
-        "Led a 5-member team to the National Finale of SIH 2024, designing a smart logistics management system for India Post.",
-        "Spearheaded the shortlisting and ideation of two complex problem statements — Rozgar Setu (job-skill mapping) and PostMitra; the latter was selected from over 150+ entries for final prototype development.",
-        "Architected and developed the PostMitra prototype using the MERN stack, integrating dynamic route optimization with graph theory and real-time parcel tracking via WebSockets",
-        "Implemented ML models to predict delays in train logistics, improving delivery time estimates and system reliability.",
+        "Led end-to-end development of a smart logistics management system (PostMitra) selected for national finale among 150+ teams.",
+        "Drove ideation and prototyping using MERN stack with real-time parcel tracking and dynamic route optimization via graph algorithms.",
+        "Collaborated with India Post and railway authorities to conduct field research and validate key logistics challenges.",
+        "Engineered backend with WebSockets for live data streaming; integrated ML models to predict delivery delays in train logistics.",
       ]
     },
     {
@@ -102,8 +96,10 @@ export const DATA = {
       logoUrl: "/atomic.png",
       start: "May 24",
       end: "Aug 24",
-      description:
-        "Actively contributed to open-source projects, successfully merging ~30 Pull Requests. Worked with React.js and JavaScript to resolve frontend issues. Ranked among the top 100 contributors and in the top 4% of active contributors within the cohort.",
+      description:[
+        "Contributed 30+ pull requests across multiple open-source repositories, addressing UI/UX bugs, component design issues, and codebase optimizations in React.js.",
+        "Collaborated with maintainers and contributors via GitHub, following standard Git workflows including issue triaging and code reviews.", 
+        "Recognized among the top 4% of contributors based on activity, code quality, and community involvement."],
     },
   ],
   codingProfiles: [
@@ -112,7 +108,7 @@ export const DATA = {
       href: "https://leetcode.com/u/kiran_117",
       logoUrl: "/leetcode.png",
       stats: [
-        { label: "Problems Solved", value: 306 },
+        { label: "Problems Solved", value: 310 },
         { label: "Contest Rating", value: "1425" },
         { label: "Badges", value: "4" },
       ],
@@ -186,10 +182,9 @@ export const DATA = {
       dates: "Sept 24 - Dec 24",
       location: "Rajalaxmi Engineering College, Chennai",
       description:[
-        "For Smart India Hackathon 2024, I worked on a project focused on optimizing the utilization of workshops and labs across educational institutes. The solution aimed to create a seamless platform for scheduling, resource allocation, and collaboration, ensuring better access and efficiency for all participating institutions."],
+        "Finalist – Smart India Hackathon 2024: Led development of a smart logistics solution (PostMitra) using MERN stack, selected among top 1% nationwide."],
       image:
         "/sih.jpg",
-      // mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
       links: [],
     },
     {
@@ -208,7 +203,7 @@ export const DATA = {
       dates: "Mar 22 - Aug 22",
       location: "IIT Guwahati",
       description:[
-        "Participated in Smart India Hackathon 2022, addressing a national-level problem on shared usage of workshops and labs across institutes. Developed a platform for efficient scheduling, resource sharing, and collaboration. Worked with a team to deliver an innovative solution."],
+        "Finalist – Smart India Hackathon 2022: Designed a platform enabling students, startups, and institutions to discover and book shared laboratory facilities across campuses."],
       image:
         "/sih.jpg",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
@@ -219,7 +214,7 @@ export const DATA = {
       dates: "Apr 22",
       location: "Remote",
       description:[
-        "Participated in Smart India Hackathon 2022, addressing a national-level problem on shared usage of workshops and labs across institutes. Developed a platform for efficient scheduling, resource sharing, and collaboration. Worked with a team to deliver an innovative solution."],
+        "Finalist – E-Cell, NIT Rourkela (Top 8): Designed Geels, a content-sharing platform for gaming reels tailored to the gaming community."],
       image:
         "/shark.png",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
@@ -233,10 +228,9 @@ export const DATA = {
       dates: "Feb 23 - Present",
       location: "Visvesvaraya National Institute of Technology, Nagpur",
       description:[
-        "Facilitated placements for 320+ students by coordinating with recruiters, alumni, and HRs. Managed databases, organized placement drives, and guided peers in training and career development."],
+        "Managed the official VNIT Training and Placement LinkedIn page, growing it to 940+ followers and enhancing digital visibility, alumni engagement, and recruiter outreach.", "Coordinated with company representatives, alumni, and T&P staff for seamless execution of placement drives.", "Supported 10+ Workshops, 15+ Training Sessions, and outreach campaigns to prepare students for interviews and campus placements. Also conducted 40+ mock interviews for final-year students.", "Assisted 84+ final-year students, contributing to a 76.36% on-campus placement rate for the graduating batch."],
       image:
         "/vnit.jpeg",
-      // mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
       links: [],
     },
     {
